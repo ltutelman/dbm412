@@ -75,9 +75,16 @@ WSGI_APPLICATION = 'dbm412.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+
+        'USER': 'masterUser',
+
+        'PASSWORD': 'masterPassword123!',
+
+        'HOST': 'tempe-apartment-db.caehuq3iuf1m.us-east-1.rds.amazonaws.com',
+
+        'PORT': '5432',    }
 }
 
 
